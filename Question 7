@@ -1,1 +1,7 @@
+What are Many to Many associations?
 
+In the context of Hibernate and database design, Many-to-Many associations refer to a relationship between two entity types where multiple instances of one entity can be associated with multiple instances of another entity. This type of association requires an intermediary table (also known as a join table) to manage the relationships.
+
+For example, consider two entities: Student and Course. A student can enroll in multiple courses, and a course can have multiple students enrolled. To represent this many-to-many association, we create an intermediary table, often named "Student_Course," that contains foreign keys to the primary keys of both the Student and Course tables.
+
+Using Hibernate, you can map this many-to-many association by defining appropriate annotations or XML mappings to establish the relationship between the entities.
