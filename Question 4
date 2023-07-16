@@ -1,1 +1,7 @@
+What is a Session in Hibernate?
 
+In Hibernate, a Session represents a single-threaded unit of work and a persistent context for interacting with the database. It wraps a JDBC connection and manages the persistence operations such as storing, updating, and retrieving objects from the database.
+
+A Session is typically created using a SessionFactory, and it provides methods to perform CRUD operations and execute queries. The Session acts as an interface between the application and the underlying database, allowing developers to work with persistent objects using object-oriented paradigms.
+
+Once the unit of work is completed or when the application no longer needs to interact with the database, the Session should be closed to release resources properly.
