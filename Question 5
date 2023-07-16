@@ -1,1 +1,7 @@
+What is a SessionFactory?
 
+SessionFactory in Hibernate is a thread-safe factory for creating Session objects. It is typically instantiated only once during application startup, and it provides a connection to the database through which the application can interact with the database.
+
+SessionFactory is a heavyweight object and maintains a pool of database connections that are used to create individual Session instances. Since creating a SessionFactory can be resource-intensive, it is designed to be shared among multiple threads and reused throughout the application's lifecycle.
+
+The configuration information and mappings for the persistent classes are usually specified in the Hibernate configuration file or using annotations. The SessionFactory uses this configuration to create and manage Sessions efficiently.
