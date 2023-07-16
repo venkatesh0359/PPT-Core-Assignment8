@@ -1,1 +1,11 @@
+What is Hibernate caching?
 
+Hibernate caching is a mechanism employed to store frequently accessed data in memory, reducing the need to fetch the data from the database repeatedly. It helps improve the performance and responsiveness of the application by minimizing the number of database queries.
+
+Hibernate provides two levels of caching:
+
+First Level Cache: Also known as the Session cache, this cache is enabled by default and is associated with a specific Hibernate Session. It stores the objects retrieved or persisted within that Session and ensures that if the same object is requested again, it is fetched from the cache instead of the database.
+
+Second Level Cache: This cache is shared across multiple Sessions in an application. It is more global in scope and stores objects that are commonly accessed by multiple Sessions. Second level cache is optional and needs to be configured explicitly.
+
+Hibernate supports various caching providers like Ehcache, Infinispan, and Hazelcast. Caching strategies can be configured based on the specific requirements of the application.
