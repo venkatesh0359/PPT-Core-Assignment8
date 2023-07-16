@@ -1,1 +1,6 @@
+What is HQL?
+HQL stands for Hibernate Query Language. It is a powerful object-oriented query language provided by Hibernate to perform database operations using the concepts of object-oriented programming rather than SQL. HQL is quite similar to SQL but operates on the domain model classes and their properties instead of database tables and columns.
 
+HQL queries are independent of the underlying database and allow developers to write database-agnostic queries. Hibernate internally converts HQL queries into the appropriate SQL queries for the target database.
+
+HQL supports various features like joins, projections, aggregations, and sorting, making it a flexible and expressive language for database querying within Hibernate-based applications.
