@@ -1,1 +1,16 @@
+What are some of the important interfaces of the Hibernate framework?
 
+
+Some of the important interfaces in the Hibernate framework are:
+
+SessionFactory: It is a thread-safe factory for creating Hibernate Sessions. It is typically instantiated only once in an application and provides a connection to the database.
+
+Session: It represents a single-threaded unit of work and a persistence context for interacting with the database. It wraps a JDBC connection and handles database operations.
+
+Transaction: The Transaction interface allows you to control transactions within Hibernate.
+
+Query: This interface enables developers to perform HQL (Hibernate Query Language) or Criteria queries to retrieve data from the database.
+
+Criteria: The Criteria interface allows for creating more dynamic queries using a programmatic and type-safe approach.
+
+Configuration: The Configuration interface is used to configure and bootstrap Hibernate. It holds properties and mapping settings for the persistence classes.
